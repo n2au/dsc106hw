@@ -1,0 +1,91 @@
+<html>
+    <style>
+        body{
+            background-color: white;
+            background-image: url(https://news.mcdonalds.com/static-files/2e2f906c-31c1-47a7-881f-d97fb455048f);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: initial;
+            opacity: .8;
+        }
+    </style>
+    <head>
+        <title>McDonald's Data Insights</title>
+    </head>
+    <body>
+        <h1> 
+            <img src="https://news.mcdonalds.com/static-files/59507ede-6194-44cc-a232-c45e4154ce7f" height="60">
+            McDondald's Data Driven Analytics 
+        </h1>
+        <b>Here is what we know about the impossible burger:</b><br>
+        <ul>
+            <li>The Impossible burger was released in October 2018 by Burger King.</li>
+            <li>The Impossible burger is vegetable burger which most resembles a hamburger.</li>
+        </ul>
+        <p>
+            <b>Our total sales since 2016:</b><br>
+            <div id="totalSales"></div><br>
+            Circa 3<sup>rd</sup> quarter, 2018, we can see a somewhat linear groqth in terms of total sales for our company.
+            Thus, until that time, our company is doing quite well. Post Q3, 2018, does not continue to reflect that growth.
+            Instead, from that point on, sales drop and remain at that stagnent point. uncoincidentally, around the same time
+            as the dip in sales, Burger King has released their vegetable burger. The had the sales only dipped for that quarter, 
+            one would be able to argue that it was mereley the novelty of Burger King's new product that caused this dip. However,
+            the fact that sales has remained stagenent at a lower level than before BK's burger was introduced, leads me to believe
+            that consumers have taken a liking to the new concept. <br>
+        </p>
+        
+        <p>
+            <b>What happens to hamburger sales during the time the impossible burger is introduced?</b><br><br>
+            The line chart below represents the sales trends of hamburgers by McDonald's <span>&#177;</span>1 month 
+            from October each year. <br>
+            <!-- Let's see the chart here-->
+            <div id="lineChart"></div><br>
+            September (<i style = 'color:#ffc72c'>yellow</i>) shows that from 2016 to 2018, hamburger sales increase year-by-year.
+            This growth is backed by the step-ups that October (<i style = 'color:black'>black</i>) and November (<i style = 'color:#da291c'>red</i>) show until 2018.
+            Thus we can infer that until September 2018, hamburger sales show growth. However, in October 2018, we see that
+            instead of continuing the upwards growth of previous years, sales have fallen. This is also the same for November 2018
+             and September 2019. It seems as though McDonald's hamburger sales have decreased from previous years beginning October 2018; 
+             the same time in which Burger King has introduced the impossible burger. It would be possible to infer that 
+              <b>BK's Impossible Burger could be stealing some of our potential business!!!</b>
+        </p>
+        <p>
+                <b>What is our primary product?</b>
+                <div id="pieChart"></div><br>
+                To figure out a plan of action we want to first look at what our highest revenue generating stream is. From
+                the chart above, we can see that hamburgers are the highest in terms of streams of revenue with the company.
+                Because the fish fillet and the chicken fillet are both more health-conscious options and BK's burger is also a
+                health-conscious hamburger alternative we would want to also go along those lines to take some of that market share
+                and essentially beat them at their own game. The fact that our hamburgers still maintain such a high percentage of
+                of our sales (<i>as shown below</i>) suggests that we must bolster hamburger sales as a whole or find an alternative
+                much as Burger King has.<br>
+                <div id="comparePieChart"></div><br>
+                From the above two charts we can gather a few facts that can drive our decision-making process:<br>
+                <ul>
+                    <li>Hamburgers, chicken fillets, and fish fillets maintain a roughly similar percentages of our total sales.</li>
+                    <li>From 2018 to 2019, chicken and fish fillet sales percentages have slightly increased.</li>
+                    <li>From 2018 to 2019, total sales in all categories nationwide have decreased.</li>
+                </ul>
+                With these in mind we can determine that holistically, McDonald's needs to make moves to expand our product line
+                to include more health-conscious options for the customers. By introducing this these products, and incorporating 
+                the brand loyalty that many already have with us, it would likely put us closer to generating revenue comparable
+                to "pre-impossible burger" time.
+            </p>
+
+        
+
+
+        <!-- External imports begin -->
+        <script src = "https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>  
+        <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>  
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <!-- External imports end -->
+
+        <!-- Internal imports begin -->
+        <script src="lineChart.js"></script>
+        <script src="totalSales.js"></script>
+        <script src="pieChart.js"></script>
+        <script src="comparePieChart.js"></script>
+        <!-- Internal imports end -->
+    </body>
+</html>
